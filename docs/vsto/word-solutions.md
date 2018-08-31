@@ -54,35 +54,35 @@ ms.lasthandoff: 04/16/2018
 -   [Personnalisation de l'interface utilisateur de Word](#UI).  
   
 ##  <a name="automating"></a> Automatisation de Word  
- Le modèle objet Word expose de nombreux types que vous pouvez utiliser pour automatiser Word. Par exemple, vous pouvez, par programmation, créer des tableaux, mettre en forme des documents, ainsi que définir le texte dans des plages et des paragraphes. Pour plus d'informations, consultez [Word Object Model Overview](../vsto/word-object-model-overview.md).  
+ Le modèle objet Word expose de nombreux types que vous pouvez utiliser pour automatiser Word. Par exemple, vous pouvez, par programmation, créer des tableaux, mettre en forme des documents, ainsi que définir le texte dans des plages et des paragraphes. Pour plus d'informations, consultez [Vue d’ensemble du modèle d’objet Word](../vsto/word-object-model-overview.md).  
   
- Lorsque vous développez des solutions Word dans Visual Studio, vous pouvez également utiliser des *éléments hôtes* et des *contrôles hôtes* dans vos solutions. Il s'agit d'objets qui étendent certains objets couramment utilisés dans le modèle objet Word, tels que les objets <xref:Microsoft.Office.Interop.Word.Document> et <xref:Microsoft.Office.Interop.Word.ContentControl> . Les objets étendus se comportent comme les objets Word sur lesquels ils sont basés, mais ils ajoutent des événements supplémentaires et des fonctionnalités de liaison de données aux objets. Pour plus d'informations, consultez [Automating Word by Using Extended Objects](../vsto/automating-word-by-using-extended-objects.md).  
+ Lorsque vous développez des solutions Word dans Visual Studio, vous pouvez également utiliser des *éléments hôtes* et des *contrôles hôtes* dans vos solutions. Il s'agit d'objets qui étendent certains objets couramment utilisés dans le modèle objet Word, tels que les objets <xref:Microsoft.Office.Interop.Word.Document> et <xref:Microsoft.Office.Interop.Word.ContentControl> . Les objets étendus se comportent comme les objets Word sur lesquels ils sont basés, mais ils ajoutent des événements supplémentaires et des fonctionnalités de liaison de données aux objets. Pour plus d'informations, consultez [Automatisation de Word à l’aide d’objets étendus](../vsto/automating-word-by-using-extended-objects.md).  
   
-##  <a name="doclevel"></a> Developing Document-Level Customizations for Word  
+##  <a name="doclevel"></a> Développement d'une personnalisation au niveau du document pour Word  
  Une personnalisation au niveau du document pour Microsoft Office Word se compose d'un assembly qui est associé à un document spécifique. L'assembly augmente généralement les fonctionnalités du document en personnalisant l'interface utilisateur et en automatisant Word. Contrairement à un complément VSTO, qui est associé à Word lui-même, les fonctionnalités que vous implémentez dans une personnalisation sont disponibles uniquement lorsque le document associé est ouvert dans Word.  
   
- Pour créer un projet de personnalisation au niveau du document pour Word, utilisez les modèles de projet de document Word ou de modèle Word dans la boîte de dialogue **Nouveau projet** de Visual Studio. Pour plus d'informations, consultez [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+ Pour créer un projet de personnalisation au niveau du document pour Word, utilisez les modèles de projet de document Word ou de modèle Word dans la boîte de dialogue **Nouveau projet** de Visual Studio. Pour plus d'informations, consultez [Comment : créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
- Pour plus d’informations sur le fonctionnement des personnalisations au niveau du document, consultez [Architecture of Document-Level Customizations](../vsto/architecture-of-document-level-customizations.md).  
+ Pour plus d’informations sur le fonctionnement des personnalisations au niveau du document, consultez [Architecture des personnalisations au niveau du document](../vsto/architecture-of-document-level-customizations.md).  
   
 ### <a name="word-customization-programming-model"></a>Modèle de programmation de personnalisation Word  
- Lorsque vous créez un projet au niveau du document pour Word, Visual Studio génère une classe, appelée `ThisDocument`, qui constitue la base de votre solution. Cette classe représente le document associé à votre solution, et fournit les informations de base nécessaires à l'écriture de votre code.  
+ Lorsque vous créez un projet au niveau du document pour Word, Visual Studio génère une classe, appelée `ThisDocument`, qui constitue la base de votre solution. Cette classe représente le document associé à votre solution et fournit les informations de base nécessaires à l'écriture de votre code.  
   
- Pour plus d’informations sur la classe `ThisDocument` et les autres fonctionnalités que vous pouvez utiliser dans un projet au niveau du document, consultez [Programming Document-Level Customizations](../vsto/programming-document-level-customizations.md).  
+ Pour plus d’informations sur la classe `ThisDocument` et les autres fonctionnalités que vous pouvez utiliser dans un projet au niveau du document, consultez [Programmation de personnalisations au niveau du document](../vsto/programming-document-level-customizations.md).  
   
 ##  <a name="applevel"></a> Développement de compléments VSTO pour Word  
  Un complément VSTO pour Microsoft Office Word se compose d'un assembly qui est chargé par Word. L'assembly étend généralement les fonctionnalités Word en personnalisant l'interface utilisateur et en automatisant Word. Contrairement à une personnalisation au niveau du document, qui est associée à un document spécifique, les fonctionnalités que vous implémentez dans un complément VSTO ne sont pas limitées à un seul document.  
   
- Pour créer un projet de complément VSTO pour Word, utilisez les modèles de projet de complément Word proposés dans la boîte de dialogue **Nouveau projet** de Visual Studio. Pour plus d'informations, consultez [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+ Pour créer un projet de complément VSTO pour Word, utilisez les modèles de projet de complément Word proposés dans la boîte de dialogue **Nouveau projet** de Visual Studio. Pour plus d'informations, consultez [Comment : créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
- Pour obtenir des informations générales sur le fonctionnement des compléments VSTO, consultez [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md).  
+ Pour obtenir des informations générales sur le fonctionnement des compléments VSTO, consultez [Architecture des compléments VSTO](../vsto/architecture-of-vsto-add-ins.md).  
   
 ### <a name="word-add-in-programming-model"></a>Modèle de programmation de complément Word  
- Quand vous créez un projet de complément VSTO Word, Visual Studio génère une classe, appelée `ThisAddIn`, qui constitue la base de votre solution. Cette classe fournit les informations de base nécessaires à l’écriture de votre code, et elle expose également le modèle objet de Word à votre complément VSTO.  
+ Quand vous créez un projet de complément VSTO Word, Visual Studio génère une classe, appelée `ThisAddIn`, qui constitue la base de votre solution. Cette classe fournit les informations de base nécessaires à l’écriture de votre code et elle expose également le modèle objet de Word à votre complément VSTO.  
   
- Pour plus d’informations sur la classe `ThisAddIn` et les autres fonctionnalités que vous pouvez utiliser dans un complément VSTO, consultez [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md).  
+ Pour plus d’informations sur la classe `ThisAddIn` et les autres fonctionnalités que vous pouvez utiliser dans un complément VSTO, consultez [Programmation de compléments VSTO](../vsto/programming-vsto-add-ins.md).  
   
-##  <a name="UI"></a> Customizing the User Interface of Word  
+##  <a name="UI"></a> Personnalisation de l'Interface Utilisateur de Word  
  Il existe différentes façons de personnaliser l'interface utilisateur de Word. Certaines options sont disponibles pour tous les types de projets, tandis que d'autres options sont disponibles uniquement pour les compléments VSTO ou les personnalisations au niveau du document.  
   
 ### <a name="options-for-all-project-types"></a>Options pour tous les types de projets  
@@ -112,8 +112,8 @@ ms.lasthandoff: 04/16/2018
   
 |Titre|Description|  
 |-----------|-----------------|  
-|[Word Object Model Overview](../vsto/word-object-model-overview.md)|Fournit une vue d'ensemble des principaux types fournis par le modèle objet Word.|  
-|[Automating Word by Using Extended Objects](../vsto/automating-word-by-using-extended-objects.md)|Fournit des informations sur les objets étendus (fournis par [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]) que vous pouvez utiliser dans les solutions Word.|  
+|[Vue d’ensemble du modèle d’objet Word](../vsto/word-object-model-overview.md)|Fournit une vue d'ensemble des principaux types fournis par le modèle objet Word.|  
+|[Automatisation de Word à l’aide d’objets étendus](../vsto/automating-word-by-using-extended-objects.md)|Fournit des informations sur les objets étendus (fournis par [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]) que vous pouvez utiliser dans les solutions Word.|  
 |[Vue d’ensemble des contrôles Windows Forms dans les documents Office](../vsto/windows-forms-controls-on-office-documents-overview.md)|Explique comment ajouter des contrôles Windows Forms à des documents Word.|  
 |[Procédure pas à pas : création de votre première personnalisation au niveau du document pour Word](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)|Montre comment créer une personnalisation de base au niveau du document pour Word.|  
 |[Procédure pas à pas : création de votre premier complément VSTO pour Word](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)|Montre comment créer un complément VSTO de base pour Word.|  
