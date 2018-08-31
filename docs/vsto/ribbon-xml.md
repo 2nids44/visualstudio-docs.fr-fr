@@ -1,5 +1,5 @@
 ---
-title: Élément XML Ribbon
+title: Élément XML Ruban
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -33,24 +33,24 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 06/04/2018
 ms.locfileid: "34693128"
 ---
-# <a name="ribbon-xml"></a>Élément XML Ribbon
-  L’élément Ruban (XML) vous permet de personnaliser un ruban à l’aide de XML. Utilisez l’élément Ruban (XML) si vous souhaitez personnaliser le ruban d’une manière qui n’est pas pris en charge par l’élément Ruban (Concepteur visuel). Pour obtenir une comparaison de ce que vous pouvez faire avec chaque élément, consultez [vue d’ensemble du ruban](../vsto/Ribbon-overview.md).  
+# <a name="ribbon-xml"></a>Élément XML Ruban
+  L’élément XML Ruban vous permet de personnaliser un ruban à l’aide d'XML. Utilisez l’élément XML Ruban si vous souhaitez personnaliser le ruban d’une manière qui n’est pas pris en charge par l’élément Ruban (Concepteur visuel). Pour obtenir une comparaison de ce que vous pouvez faire avec chaque élément, consultez [vue d’ensemble du ruban](../vsto/Ribbon-overview.md).  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
   
-## <a name="add-a-ribbon-xml-item-to-a-project"></a>Ajouter un élément Ruban (XML) à un projet  
- Vous pouvez ajouter un élément **Ruban (XML)** à tout projet Office à partir de la boîte de dialogue **Ajouter un nouvel élément** . Visual Studio ajoute automatiquement les fichiers suivants à votre projet :  
+## <a name="add-a-ribbon-xml-item-to-a-project"></a>Ajouter un élément XML Ruban à un projet  
+ Vous pouvez ajouter un élément **XML Ruban** à tout projet Office à partir de la boîte de dialogue **Ajouter un nouvel élément** . Visual Studio ajoute automatiquement les fichiers suivants à votre projet :  
   
--   Un fichier XML de ruban. Ce fichier définit l'interface utilisateur du ruban. Utilisez ce fichier pour ajouter des éléments d'interface utilisateur tels que des onglets, des groupes et des contrôles. Pour plus d’informations, consultez [de référence du fichier XML du ruban](#RibbonDescriptorFile) plus loin dans cette rubrique.  
+-   Un fichier XML ruban. Ce fichier définit l'interface utilisateur du ruban. Utilisez ce fichier pour ajouter des éléments d'interface utilisateur tels que des onglets, des groupes et des contrôles. Pour plus d’informations, consultez [Référence de fichier XML du ruban](#RibbonDescriptorFile) plus loin dans cette rubrique.  
   
--   Un fichier de code du ruban. Ce fichier contient la *classe du ruban*. Cette classe porte le nom que vous avez spécifié pour l'élément **Ruban (XML)** dans la boîte de dialogue **Ajouter un nouvel élément** . Applications Microsoft Office utilisent une instance de cette classe pour charger le ruban personnalisé. Pour plus d’informations, consultez [référence de classe du ruban](#RibbonExtensionClass) plus loin dans cette rubrique.  
+-   Un fichier de code du ruban. Ce fichier contient la *classe du ruban*. Cette classe porte le nom que vous avez spécifié pour l'élément **XML Ruban** dans la boîte de dialogue **Ajouter un nouvel élément**. Les applications Microsoft Office utilisent une instance de cette classe pour charger le ruban personnalisé. Pour plus d’informations, consultez [Référence de classe du ruban](#RibbonExtensionClass) plus loin dans cette rubrique.  
   
- Par défaut, ces fichiers ajoutent un groupe personnalisé pour le **compléments** onglet dans le ruban.  
+ Par défaut, ces fichiers ajoutent un groupe personnalisé pour l'onglet **compléments** dans le ruban.  
   
 ## <a name="display-the-custom-ribbon-in-a-microsoft-office-application"></a>Afficher le ruban personnalisé dans une application Microsoft Office  
- Après avoir ajouté un **ruban (XML)** élément à votre projet, vous devez ajouter du code pour le **ThisAddin**, **ThisWorkbook**, ou **ThisDocument** classe qui remplace le `CreateRibbonExtensibilityObject` méthode et retourne le ruban classe XML à l’application Office.  
+ Après avoir ajouté un élément **XML Ruban** à votre projet, vous devez ajouter du code pour la classe **ThisAddin**, **ThisWorkbook**, ou **ThisDocument** qui remplace la méthode `CreateRibbonExtensibilityObject` et retourne le classe XML Ruban à l’application Office.  
   
- L'exemple de code suivant remplace la méthode `CreateRibbonExtensibilityObject` et retourne une classe XML de ruban nommée MyRibbon.  
+ L'exemple de code suivant remplace la méthode `CreateRibbonExtensibilityObject` et retourne une classe XML Ruban nommée MyRibbon.  
   
  [!code-csharp[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.cs#1)]
  [!code-vb[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.vb#1)]  
