@@ -75,9 +75,9 @@ ms.locfileid: "34692458"
  Pour plus d’informations, consultez [vue d’ensemble du ruban](../vsto/ribbon-overview.md).  
   
 ##  <a name="Backstage"></a> Mode Backstage  
- Dans les applications Office, en cliquant sur le **fichier** onglet mode Backstage. Le mode Backstage fournit une interface utilisateur qui combine des actions et des tâches de niveau fichier, et remplace les fonctionnalités similaires disponibles via le bouton Microsoft Office dans Microsoft Office System version 2007. Ce mode est intégralement extensible à l'aide de XML.  
+ Dans les applications Office, cliquer sur l'onglet **fichier** ouvre le mode Backstage. Le mode Backstage fournit une interface utilisateur qui combine des actions et des tâches de niveau fichier et remplace les fonctionnalités similaires disponibles via le bouton Microsoft Office dans Microsoft Office System version 2007. Ce mode est intégralement extensible à l'aide de XML.  
   
- Visual Studio ne fournit pas de concepteur ni d'API pour personnaliser le mode Backstage. Toutefois, si vous ajoutez un **ruban (XML)** élément à votre projet Office, vous pouvez ajouter le XML dans le fichier XML du ruban pour personnaliser le mode Backstage. Pour plus d’informations sur **ruban (XML)** éléments, consultez [ruban XML](../vsto/ribbon-xml.md).  
+ Visual Studio ne fournit pas de concepteur ni d'API pour personnaliser le mode Backstage. Toutefois, si vous ajoutez un élément **ruban (XML)** à votre projet Office, vous pouvez ajouter de l'XML au fichier XML du ruban pour personnaliser le mode Backstage. Pour plus d’informations sur éléments **ruban (XML)**, consultez [ruban XML](../vsto/ribbon-xml.md).  
   
  Pour plus d’informations sur la personnalisation du mode Backstage, consultez [Introduction à Office 2010 Backstage pour les développeurs](http://go.microsoft.com/fwlink/?LinkId=182189) et [personnaliser la Backstage Office 2010 pour les développeurs](http://go.microsoft.com/fwlink/?LinkId=182188).  
   
@@ -96,7 +96,7 @@ ms.locfileid: "34692458"
  Pour plus d’informations, consultez [éléments hôtes et héberger la vue d’ensemble des contrôles](../vsto/host-items-and-host-controls-overview.md) et [contrôles Windows forms dans une vue d’ensemble des documents Office](../vsto/windows-forms-controls-on-office-documents-overview.md).  
   
 ##  <a name="Shortcut"></a> Menus contextuels  
- Un menu contextuel s'affiche lorsque vous cliquez avec le bouton droit dans un document ou une fenêtre d'application. Vous pouvez définir un menu contextuel pour qu'il apparaisse quand un événement se produit (par exemple, quand un utilisateur clique avec le bouton droit sur un document, un classeur ou un contrôle hôte). Vous avez la possibilité d'ajouter divers contrôles ou commandes de menu à un menu contextuel, et créer des menus contextuels à l'aide de XML. Si vous ajoutez un **ruban (XML)** élément à votre projet Office, vous pouvez ajouter le XML dans le fichier XML du ruban pour créer des menus contextuels. Pour plus d’informations sur l’utilisation de XML pour créer des menus contextuels, consultez [Comment : ajouter des commandes aux menus contextuels](../vsto/how-to-add-commands-to-shortcut-menus.md).  
+ Un menu contextuel s'affiche lorsque vous cliquez avec le bouton droit dans un document ou une fenêtre d'application. Vous pouvez définir un menu contextuel pour qu'il apparaisse quand un événement se produit (par exemple, quand un utilisateur clique avec le bouton droit sur un document, un classeur ou un contrôle hôte). Vous avez la possibilité d'ajouter divers contrôles ou commandes de menu à un menu contextuel, et créer des menus contextuels à l'aide de XML. Si vous ajoutez un élément **ruban (XML)** à votre projet Office, vous pouvez ajouter de l'XML dans le fichier XML du ruban pour créer des menus contextuels. Pour plus d’informations sur l’utilisation d'XML pour créer des menus contextuels, consultez [Comment : ajouter des commandes aux menus contextuels](../vsto/how-to-add-commands-to-shortcut-menus.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Vue d’ensemble du ruban](../vsto/ribbon-overview.md)   
